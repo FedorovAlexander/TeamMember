@@ -1,0 +1,205 @@
+.team-member {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+  margin-right: 25px;
+  transition: 0.5s ease opacity;
+}
+
+.team-member:last-child {
+  margin-right: 0;
+}
+
+.team-member-photo {
+  display: block;
+  position: relative;
+  opacity: 1;
+  min-height: 470px;
+  transition: 0.5s opacity ease;
+}
+
+.team-member-layout {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
+}
+
+.team-member-gradient {
+  background: linear-gradient(to bottom, #ee898a, #efd989);
+  transform: translate(0px, 0px);
+  transition: 0.5s ease all;
+}
+
+.team-member:hover .team-member-gradient {
+  transform: translate(-10px, -10px);
+}
+
+.team-member:hover .team-member-photo {
+  opacity: 0.1;
+}
+
+.team-member-photo1 {
+  background-image: url('../img/team-member1.jpg');
+}
+
+.team-member-name {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.team-member-position {
+  color: #999999;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.team-member-sn-links {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: 0.5s ease all;
+  font-size: 0;
+}
+
+.sn-link {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-left: 1px solid #f38181;
+  background-color: #fce38a;
+}
+
+.sn-link:first-child {
+  border-left: none;
+}
+
+.sn-link:hover {
+  background-color: #f38181;
+  transition: 0.1s linear;
+}
+
+.team-member:hover .team-member-sn-links {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sn-link1:after {
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  width: 13px;
+  height: 26px;
+  background-image: url(../img/sprite-sn-team.png);
+  background-position: -14px -14px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.sn-link1:hover:after {
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  width: 13px;
+  height: 26px;
+  background-image: url(../img/sprite-sn-team-white.png);
+  background-position: -14px -14px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.sn-link2:after {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 29%;
+  width: 26px;
+  height: 22px;
+  background-image: url(../img/sprite-sn-team.png);
+  background-position: -158px -14px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.sn-link2:hover:after {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 29%;
+  width: 26px;
+  height: 22px;
+  background-image: url(../img/sprite-sn-team-white.png);
+  background-position: -158px -14px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.sn-link3:after {
+  display: block;
+  position: absolute;
+  top: 28%;
+  left: 30%;
+  width: 21px;
+  height: 26px;
+  background-image: url(../img/sprite-sn-team.png);
+  background-position: -109px -14px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.sn-link3:hover:after {
+  display: block;
+  position: absolute;
+  top: 28%;
+  left: 30%;
+  width: 21px;
+  height: 26px;
+  background-image: url(../img/sprite-sn-team-white.png);
+  background-position: -109px -14px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.sn-link4:after {
+  display: block;
+  position: absolute;
+  top: 28%;
+  left: 28%;
+  width: 26px;
+  height: 26px;
+  background-image: url(../img/sprite-sn-team.png);
+  background-position: -55px -14px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.sn-link4:hover:after {
+  display: block;
+  position: absolute;
+  top: 28%;
+  left: 28%;
+  width: 26px;
+  height: 26px;
+  background-image: url(../img/sprite-sn-team-white.png);
+  background-position: -55px -14px;
+  background-repeat: no-repeat;
+  content: "";
+}
