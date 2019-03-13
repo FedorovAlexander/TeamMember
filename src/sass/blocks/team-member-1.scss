@@ -1,0 +1,100 @@
+.team-member-1 {
+	display: flex;
+	position: relative;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	&__photo {
+		opacity: 1;
+		transition: all 0.3s linear;
+	}
+
+	&:hover &__photo {
+		opacity: 0.1;
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+	}
+
+	&__skills {
+		position: absolute;
+		top: 145px;
+		left: 100px;
+		opacity: 0;
+		width: 150px;
+		transition: opacity 0.3s linear;
+		font-size: 11px;
+	}
+
+	&:hover &__skills {
+		opacity: 0.9;
+	}
+
+	&__skills-item {
+		position: relative;
+		padding-top: 10px;
+	}
+
+	&__name-position {
+		position: absolute;
+		bottom: -10%;
+		min-width: 260px;
+		max-height: 85px;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+		background-color: #fff;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		transition: all 0.3s linear;
+		text-align: center;
+	}
+
+	&:hover &__name-position {
+		bottom: 2%;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		background-color: transparent;
+	}
+
+	&__name {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+	&__position {
+		margin-top: 13px;
+		color: #969696;
+	}
+
+	&__skill-bar {
+		display: block;
+		position: absolute;
+		bottom: -20%;
+		width: 100%;
+		height: 4px;
+		border-right: 4px;
+		background-color: #817f7e;
+	}
+
+	&__skill-progress {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		width: 0%;
+		height: 4px;
+		background-color: #ff6e47;
+		transition: width 0.5s linear;
+	}
+
+	&:hover &__skill-progress--prof {
+		width: 80%;
+	}
+
+	&:hover &__skill-progress--english {
+		width: 65%;
+	}
+
+	&:hover &__skill-progress--communication {
+		width: 90%;
+	}
+}
