@@ -41,11 +41,11 @@
 
   &__socials {
     position: absolute;
-    bottom: -52px;
+    bottom: -66px;
     width: 100%;
     background-color: #8bc34a;
-    padding-top: 15px;
-    padding-bottom: 9px;
+    padding-top: 23px;
+    padding-bottom: 16px;
     transition: bottom 0.2s linear;
   }
 
@@ -54,8 +54,8 @@
   }
 
   &__socials-link {
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
     text-decoration: none;
   }
 }
