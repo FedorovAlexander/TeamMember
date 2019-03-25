@@ -1,9 +1,87 @@
 .team-member-3 {
+  display: flex;
   position: relative;
+  flex-direction: column;
+  width: 100%;
   max-width: 380px;
   max-height: 470px;
   background-image: url(../img/team-member-4.jpg);
   background-repeat: no-repeat;
-  overflow: hidden;
   text-align: center;
+
+  &__wrapper {
+    overflow: hidden;
+  }
+
+  &__socials {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(18, 18, 21, 0.7);
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    color: #ffffff;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    letter-spacing: -0.38px;
+    font-family: Raleway;
+    font-size: 15px;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 0%;
+    background-color: transparent;
+    transition: background-color 0.2s linear,
+                border-radius 0.2s linear;
+  }
+
+  &__link:hover {
+    border-radius: 50%;
+  }
+
+  &__link--tw:hover {
+    background-color: #1da1f2;
+  }
+
+  &__link--in:hover {
+    background-color: #0077B5;
+  }
+
+  &__link--fb:hover {
+    background-color: #3b5998;
+  }
+
+  &__name-block {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-family: Montserrat;
+  }
+
+  &__name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  &__position {
+    line-height: 23px;
+    letter-spacing: -0.38px;
+    color: #707070;
+    font-family: Raleway;
+    font-size: 15px;
+  }
 }
